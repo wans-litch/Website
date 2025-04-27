@@ -1,0 +1,183 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #0099cc;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #0099cc;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e6b800;
+}
+
+/* Produk Section Styling */
+.produk {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.produk h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.produk .produk-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.produk .produk-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.produk .produk-item:hover {
+    transform: scale(1.05);
+}
+
+.produk .produk-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produk .produk-item h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.produk .produk-item p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.produk .produk-item .btn-primary {
+    background-color: #0099cc;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.produk .produk-item .btn-primary:hover {
+    background-color: #0077b3;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .produk .produk-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .produk .produk-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
